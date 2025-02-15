@@ -1,0 +1,42 @@
+.wrapper_footer {
+  width: 100%;
+  color: #fff;
+  background-color: var(--base-nav);
+  padding: 24px 0px;
+  a {
+    color: #fff;
+  }
+  .container_footer {
+    width: 85%;
+    margin: 0px auto;
+    padding: 12px 0px;
+  }
+  .list-col {
+    display: flex;
+    justify-content: space-between;
+    & > div {
+      width: calc(95% / 4);
+    }
+    .col1 {
+      width: 20%;
+    }
+    .col1 .thumb {
+      width: 50%;
+    }
+    .thumb img {
+      width: 100%;
+    }
+    .item {
+      display: flex;
+      gap: 5px;
+    }
+  }
+  .list-address {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}

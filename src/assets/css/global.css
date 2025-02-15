@@ -1,0 +1,20 @@
+/* global.css */
+
+/* Khai báo biến toàn cục */
+:root {
+  --color-primary: #ff6b00; /* Màu cam */
+  --color-secondary: #000000; /* Màu đen */
+  --color-background: #ffffff; /* Nền trắng */
+  --color-text: #333333;
+  --base-nav: #1e1e1e; /* Màu chữ xám đậm */
+
+  /* Border radius */
+  --Radius-radius-sm: 4px;
+  --Radius-radius-md: 8px;
+  --Radius-radius-lg: 16px;
+
+  /* Padding và margin */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+}
