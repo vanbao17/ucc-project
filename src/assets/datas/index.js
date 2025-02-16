@@ -2,7 +2,7 @@ export const navigations = [
   {
     id: 1,
     title: "Về chúng tôi",
-    path: "/ve-chung-toi",
+    path: "/about-us",
   },
   {
     id: 2,
@@ -12,6 +12,7 @@ export const navigations = [
         thumb:
           "https://ucc.com.vn/wp-content/uploads/2024/09/chung-nhan-cruelty-free.jpg",
         title_children: "Thực phẩm",
+        path: "/dich-vu/thuc-pham",
         list_nav: [
           {
             text: "Đăng ký cơ sở thực phẩm",
@@ -188,5 +189,32 @@ export const flags = [
     id: "ko",
     title: "Hàn quốc",
     image: require("../flags/flag-korean.png"),
+  },
+];
+export const questions = [
+  {
+    id: 1,
+    question: "Cloud Server là gì?",
+    answer:
+      "Cloud Server là hệ thống máy chủ hiệu năng cao được ảo hóa trên nền tảng điện toán đám mây. Việc ảo hóa trên các cụm máy chủ vật lý mạnh mẽ giúp hệ thống của doanh nghiệp luôn ổn định, sẵn sàng cao và không bị tắc nghẽn khi có lượng truy cập lớn. Với lượng tài nguyên dự phòng lớn, máy chủ ảo Cloud Server cho phép doanh nghiệp mở rộng tài nguyên gần như ngay lập tức bất cứ khi nào có nhu cầu, giúp khách hàng yên tâm tập trung vào hoạt động kinh doanh với nền tảng đám mây bảo mật cùng khả năng xử lý vượt trội hơn rất nhiều so với Shared Hosting thông thường. CLoud Server hỗ trợ đầy đủ các hệ điều hành Windows, Linux và các ứng dụng được cài đặt sẵn.",
+  },
+  {
+    id: 2,
+    question: "Khi nào tôi nên sử dụng dịch vụ Cloud Server?",
+    answer:
+      "Cloud Server là hệ thống máy chủ hiệu năng cao được ảo hóa trên nền tảng điện toán đám mây. Việc ảo hóa trên các cụm máy chủ vật lý mạnh mẽ giúp hệ thống của doanh nghiệp luôn ổn định, sẵn sàng cao và không bị tắc nghẽn khi có lượng truy cập lớn. Với lượng tài nguyên dự phòng lớn, máy chủ ảo Cloud Server cho phép doanh nghiệp mở rộng tài nguyên gần như ngay lập tức bất cứ khi nào có nhu cầu, giúp khách hàng yên tâm tập trung vào hoạt động kinh doanh với nền tảng đám mây bảo mật cùng khả năng xử lý vượt trội hơn rất nhiều so với Shared Hosting thông thường. CLoud Server hỗ trợ đầy đủ các hệ điều hành Windows, Linux và các ứng dụng được cài đặt sẵn.",
+  },
+  {
+    id: 3,
+    question: "iNET có hỗ trợ cài đặt và chuyển dữ liệu không?",
+    answer:
+      "Cloud Server là hệ thống máy chủ hiệu năng cao được ảo hóa trên nền tảng điện toán đám mây. Việc ảo hóa trên các cụm máy chủ vật lý mạnh mẽ giúp hệ thống của doanh nghiệp luôn ổn định, sẵn sàng cao và không bị tắc nghẽn khi có lượng truy cập lớn. Với lượng tài nguyên dự phòng lớn, máy chủ ảo Cloud Server cho phép doanh nghiệp mở rộng tài nguyên gần như ngay lập tức bất cứ khi nào có nhu cầu, giúp khách hàng yên tâm tập trung vào hoạt động kinh doanh với nền tảng đám mây bảo mật cùng khả năng xử lý vượt trội hơn rất nhiều so với Shared Hosting thông thường. CLoud Server hỗ trợ đầy đủ các hệ điều hành Windows, Linux và các ứng dụng được cài đặt sẵn.",
+  },
+  {
+    id: 4,
+    question:
+      "Tôi có thể dùng thử dịch vụ Cloud Server trước khi đăng ký không?",
+    answer:
+      "Cloud Server là hệ thống máy chủ hiệu năng cao được ảo hóa trên nền tảng điện toán đám mây. Việc ảo hóa trên các cụm máy chủ vật lý mạnh mẽ giúp hệ thống của doanh nghiệp luôn ổn định, sẵn sàng cao và không bị tắc nghẽn khi có lượng truy cập lớn. Với lượng tài nguyên dự phòng lớn, máy chủ ảo Cloud Server cho phép doanh nghiệp mở rộng tài nguyên gần như ngay lập tức bất cứ khi nào có nhu cầu, giúp khách hàng yên tâm tập trung vào hoạt động kinh doanh với nền tảng đám mây bảo mật cùng khả năng xử lý vượt trội hơn rất nhiều so với Shared Hosting thông thường. CLoud Server hỗ trợ đầy đủ các hệ điều hành Windows, Linux và các ứng dụng được cài đặt sẵn.",
   },
 ];

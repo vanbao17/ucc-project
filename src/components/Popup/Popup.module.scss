@@ -1,0 +1,120 @@
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes popupFadeOut {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+}
+.wrapper_popup .container_popup {
+  border-radius: 8px;
+}
+@media (min-width: 1201px) and (max-width: 1440px),
+  (min-width: 648px) and (max-width: 1024px),
+  (min-width: 1025px) and (max-width: 1200px),
+  (min-width: 1441px) and (max-width: 1920px),
+  (min-width: 1920px) {
+  .wrapper_popup {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow: auto;
+  }
+
+  .container_popup {
+    position: absolute;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    box-shadow: 0 -4px 16px 0 rgba(0, 0, 0, 0.1),
+      0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    animation: popupFadeIn 0.3s ease-out;
+  }
+
+  .wrapper_popup.closing .container_popup {
+    animation: popupFadeOut 0.3s ease-out;
+  }
+
+  .black {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #000;
+    opacity: 0.5;
+    animation: fadeIn 0.3s ease-out;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@media (max-width: "670px") {
+  .wrapper_popup {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow: auto;
+  }
+
+  .container_popup {
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    box-shadow: 0 -4px 16px 0 rgba(0, 0, 0, 0.1),
+      0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    animation: popupFadeIn 0.3s ease-out;
+  }
+
+  .wrapper_popup.closing .container_popup {
+    animation: popupFadeOut 0.3s ease-out;
+  }
+
+  .black {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #000;
+    opacity: 0.5;
+    animation: fadeIn 0.3s ease-out;
+  }
+}

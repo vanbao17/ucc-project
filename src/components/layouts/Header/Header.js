@@ -44,6 +44,7 @@ function Header() {
           {navigations.map((nav, index) => {
             return (
               <ItemNav
+                isMobile={isMobile}
                 navChose={navChose}
                 handleDropdown={(data) => {
                   if (data.length !== 0) {
@@ -168,7 +169,17 @@ function Header() {
                 </div>
                 {child.list_nav ? (
                   <div className={cx("item-right")}>
-                    {child.list_nav ? <h3>{child.title_children}</h3> : <></>}
+                    {child.list_nav ? (
+                      child.path ? (
+                        <strong>
+                          <a href={child.path}>{child.title_children}</a>
+                        </strong>
+                      ) : (
+                        <h3>{child.title_children}</h3>
+                      )
+                    ) : (
+                      <></>
+                    )}
                     <div className={cx("list_nav_child")}>
                       {child.list_nav ? (
                         child.list_nav.map((nav, index) => {

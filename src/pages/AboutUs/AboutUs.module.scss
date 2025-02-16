@@ -1,0 +1,337 @@
+.wrapper_thucPham {
+  width: 100%;
+  position: relative;
+  .container_nav {
+    width: 85%;
+    padding: 24px 0px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .container_nav_left {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      a {
+        color: black;
+        transition: 0.25s;
+      }
+      a:hover {
+        color: var(--color-primary);
+      }
+    }
+    .container_nav_right {
+      border: 1px solid #aaa;
+      border-radius: 50px;
+      .container_right .container_input {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 6px;
+      }
+
+      input {
+        padding: 0px 12px;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  .container_thucpham {
+    width: 85%;
+    margin: 0px auto;
+    & > div {
+      margin: 50px 0px;
+    }
+    .container_content1 {
+      display: flex;
+      text-align: center;
+    }
+    .container_content1_left {
+      width: 50%;
+      img {
+        width: 30%;
+      }
+      & > span {
+        display: block;
+        width: 70%;
+        margin: 0px auto;
+        line-height: 1.5rem;
+        margin-top: 12px;
+        font-size: 14px;
+      }
+    }
+    .container_content1_right {
+      width: 30%;
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .container_content2 {
+      display: flex;
+      text-align: center;
+      padding: 50px 0px;
+    }
+    .container_content2_left {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .container_content2_right {
+      width: 30%;
+      flex: 1;
+      & > span {
+        display: block;
+        width: 70%;
+        margin: 0px auto;
+        line-height: 1.5rem;
+        margin-top: 12px;
+        font-size: 14px;
+      }
+    }
+  }
+  .button-see-more {
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    button {
+      padding: 6px 12px;
+      font-size: 16px;
+      background-color: #fff;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+    button:hover {
+      background-color: var(--color-primary);
+      color: #fff;
+    }
+    span {
+      padding: 0 !important;
+      margin: 0;
+    }
+  }
+  .container_content4 {
+    width: 100%;
+    margin: 0px auto;
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .list-card-content4 {
+      border: 2px solid #aaa;
+      border-radius: 24px;
+      padding: 48px 24px;
+      width: 75%;
+      margin: 0px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      .item {
+        width: calc(100% / 2 - 24px);
+        text-align: center;
+        h3 {
+          margin-bottom: 12px;
+        }
+        p {
+          width: 70%;
+          margin: 0px auto;
+        }
+      }
+    }
+  }
+  .container_content6 {
+    width: 100%;
+    text-align: center;
+    margin: 48px 0px;
+    .list-partner {
+      width: 50%;
+      margin: 0px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 24px;
+    }
+  }
+  .container_content7 {
+    h2 {
+      text-align: center;
+      margin: 48px 0px;
+    }
+    span {
+      text-align: left;
+    }
+  }
+  .container_content5 {
+    h2 {
+      text-align: center;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+    }
+    .form {
+      width: 60%;
+      background-color: #f2f3f4;
+      margin: 0px auto;
+      border-radius: 16px;
+    }
+    .container_form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 24px;
+      padding: 24px;
+      .form-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        input,
+        textarea,
+        .btn-shubmit {
+          width: 60%;
+        }
+        textarea {
+          max-width: 60%;
+          min-width: 60%;
+          max-height: 100px;
+        }
+        input,
+        textarea {
+          border: 1px solid #aaa;
+          border-radius: 8px;
+          outline: none;
+          padding: 12px;
+        }
+        .btn-submit {
+          width: 100%;
+          margin-top: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            width: 50%;
+            padding: 6px 12px;
+            font-size: 16px;
+            background-color: var(--color-primary);
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.25s;
+            color: #fff;
+          }
+          button:hover {
+            opacity: 0.8;
+          }
+          span {
+            padding: 0 !important;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container_nav {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .container_content1 {
+    flex-direction: column;
+    gap: 24px;
+    button {
+      margin: 0px auto;
+    }
+  }
+  .container_content1_left,
+  .container_content1_right,
+  .container_content2_left,
+  .container_content2_right {
+    width: 100% !important;
+  }
+  .container_content2 {
+    width: 100%;
+    flex-direction: column-reverse !important;
+    gap: 24px;
+    button {
+      margin: 0px auto;
+    }
+  }
+  .list_question {
+    width: 100% !important;
+  }
+  .form {
+    width: 100% !important;
+  }
+  .form-left {
+    width: 70% !important;
+  }
+  .container_form {
+    input,
+    textarea,
+    button {
+      width: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+    }
+    flex-direction: column-reverse !important;
+    gap: 12px;
+  }
+}
+.wrapper_notification {
+  .title {
+    border: 1px solid #dfdddd;
+    margin-bottom: 12px;
+  }
+  .title h3 {
+    padding: 12px;
+    font-size: 18px;
+  }
+  p {
+    padding: 0px 12px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .button-close {
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+
+    button {
+      width: 50%;
+      padding: 6px 12px;
+      font-size: 16px;
+      background-color: var(--color-primary);
+      border: 1px solid #aaa;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.25s;
+      color: #fff;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    span {
+      padding: 0 !important;
+      margin: 0;
+    }
+  }
+}

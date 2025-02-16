@@ -87,6 +87,9 @@
   }
 }
 //item
+.wrapper_item_nav.isMobile {
+  border-bottom: 1px solid #dcd9d9;
+}
 .container_item_nav {
   padding: 12px;
   transition: 0.25s;
@@ -166,7 +169,8 @@
 }
 .wrapper-sidebar-mobile {
   width: 50%;
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
   background-color: #fff;
   color: black;
   height: 100vh;
@@ -198,4 +202,25 @@
   }
 }
 @media (max-width: 480px) {
+}
+.dropdown_mobile {
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  max-height: 0;
+}
+.dropdown_mobile.show {
+  max-height: 500px;
+}
+.nav1 {
+  margin-left: 12px;
+}
+.nav_title {
+  margin: 6px 0px 6px 12px;
+}
+.list_nav_children {
+  margin-left: 12px;
+  font-size: 14px;
+  li {
+    padding: 6px;
+  }
 }
